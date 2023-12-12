@@ -1,0 +1,85 @@
+.subscribtion {
+    &__content {
+        background-color: $dark-blue;
+        padding: 48px;
+        display: flex;
+        border-radius: 8px;
+        gap: 90px;
+        @include media(768px){
+            gap: 0;
+            justify-content: space-between;  
+        }
+        @include media(480px){
+            padding: 24px;
+        }
+    }
+
+    &__text {
+        color: $white;
+        font-size: 31px;
+        letter-spacing: 1px;
+    }
+
+    &__sub {
+        font-size: 13px;
+        color: $purple;
+        text-transform: uppercase;
+        font-weight: 700;       
+        margin-bottom: 30px; 
+    }
+
+    &__title {
+        @include media(768px){
+            font-size: 24px;   
+        }
+        @include media(480px){
+            font-size: 14px;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        justify-content: center;
+        gap: 15px;
+        @include media(768px){
+            width: 50%;   
+        }
+    }
+
+    &__input {
+        font-size: 20px;
+        color: $white;
+        text-align: center;
+        height: 50px;
+        border-radius: 5px;
+        background-color: $light-blue;
+        border: 1px solid $purple;
+        outline: none;
+
+        &::placeholder{
+            color: $purple
+            
+        }
+        @include media(480px){
+            font-size: 14px; 
+        }
+    }
+
+    &__button {
+        @include button(15px 200px, $purple, $white, 1px solid $purple);
+        text-transform: uppercase;
+        border-radius: 5px;
+        &:hover{
+            background-color: transparent;
+        }
+        @include media(768px){
+            padding: 15px 50px;   
+        }
+        @include media(480px){
+            font-size: 14px; 
+            padding: 15px 25px;
+        }
+    }
+}

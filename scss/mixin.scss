@@ -1,0 +1,11 @@
+@mixin button($padd: 12px 24px, $bg:$main-color, $color:white,$border:1px solid transparent){
+    background-color: $bg;
+    color: $color;
+    padding: $padd;
+    transition: 250ms ease-in;
+    border: $border;
+    transition: 250ms ease-in;
+}
+@mixin media($max-width){
+    @media(max-width:$max-width){@content}
+}
