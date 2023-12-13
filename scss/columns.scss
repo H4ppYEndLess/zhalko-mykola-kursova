@@ -1,8 +1,5 @@
 .columns {
-    margin: 124px 0 248px 0;
-    @include media(480px){
-        margin: 64px 0 124px 0;
-    }
+    margin: 64px 0 124px 0;
     &__container{
         @include media(480px){
             flex-direction: column;
@@ -121,6 +118,9 @@
         &:focus{
             background-color: transparent;
             border: 1px solid $purple;
+        }
+        @include media(768px){
+            padding: 15px 30px;
         }
     }
 }

@@ -12,12 +12,12 @@
             left: -4%;
             top: 20%;
             z-index: -1;
-            @include media(480px){
+            @include media(900px){
                 display: none;
             }
         }
-        @include media(480px){
-            flex-direction: column;
+        @include media(900px){
+            flex-wrap: wrap;
             justify-content: center;
         }
     }
@@ -28,7 +28,7 @@
     background-color: $white;
     z-index: 1;
     max-width: 50%;
-    @include media(480px){
+    @include media(900px){
         width: 100%;
         max-width: none;
         margin-bottom: 20px;
@@ -58,6 +58,9 @@
 .news {
     display: flex;
     padding-left: 50px;
+    @include media(900px){
+        padding-left: 0;
+    }
 		&__list {
 		}
 
@@ -84,8 +87,8 @@
             &:focus{
                 color: $purple;
             }
-            @include media(768px){
-                font-size: 14px;   
+            @include media(650px){
+                font-size: 18px;   
             }
         }
 }

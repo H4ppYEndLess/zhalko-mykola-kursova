@@ -5,10 +5,16 @@
         display: flex;
         border-radius: 8px;
         gap: 90px;
-        @include media(768px){
+        @include media(1100px){
             gap: 0;
             justify-content: space-between;  
         }
+        
+        @include media(650px){
+            flex-direction: column;
+            gap: 25px;
+        }
+
         @include media(480px){
             padding: 24px;
         }
@@ -29,7 +35,7 @@
     }
 
     &__title {
-        @include media(768px){
+        @include media(1100px){
             font-size: 24px;   
         }
         @include media(480px){
@@ -43,8 +49,11 @@
         width: 80%;
         justify-content: center;
         gap: 15px;
-        @include media(768px){
+        @include media(1100px){
             width: 50%;   
+        }
+        @include media(650px){
+            width: 100%;
         }
     }
 
@@ -74,7 +83,7 @@
         &:hover{
             background-color: transparent;
         }
-        @include media(768px){
+        @include media(1100px){
             padding: 15px 50px;   
         }
         @include media(480px){

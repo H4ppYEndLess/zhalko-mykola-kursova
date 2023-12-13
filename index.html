@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>TechCues</title>
         <link rel="stylesheet" href="./css/main.css">
+        <link rel="icon" href="./images/favicon.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
@@ -14,7 +15,7 @@
     <header>
         <div class="learn-more">
             <p class="learn-more__text">
-            Discover how you can scale your data with TechCues <a href="#">Learn more</a>
+            Discover how you can scale your data with TechCues <a href="#sub">Learn more</a>
             </p>
         </div>
         <div class="header">
@@ -265,7 +266,7 @@
                             </a>
                         </li>
                     </ul>
-                    <div class="sub">
+                    <div class="sub" id="sub">
                         <svg class="sub__icon" width="64px" height="65px">
                             <use href="./images/svg/icons.svg#rocket"/>
                         </svg>
@@ -273,7 +274,7 @@
                         <h2 class="sub__title">
                             Quality tech news. In your inbox. Every week.
                         </h2>
-                        <form action="#" class="sub__form">
+                        <form action="#" class="sub__form" >
                             <input type="email" class="sub__input" placeholder="Email address">
                             <button type="submit" class="sub__button">subscribe</button>
                         </form>
@@ -315,6 +316,7 @@
             </section>
             <footer>
                 <div class="footer__main">
+                    <div>
                     <div class="footer__icons">
                         <svg class="footer__logo" width="215px" height="50px">
                             <use href="./images/svg/icons.svg#footer__logo"/>
@@ -350,6 +352,8 @@
                             </li>
                         </ul>
                     </div>
+                </div>
+                <div class="footer__lists">
                     <ul class="footer__list">
                         <li class="footer__title">
                             Categories
@@ -366,15 +370,16 @@
                         <li class="footer__link"><a href="#">License</a></li>
                         <li class="footer__link"><a href="#">Change Log</a></li>
                     </ul>
-                    <form action="" class="footer__form">
-                        <h2 class="footer__text">
-                            Quality tech news.<br> In your inbox. Every week.
-                        </h2>
-                        <label class="footer__label">
-                            <input type="email" class="footer__input" placeholder="Email">
-                            <button type="submit" class="footer__button">subcribe</button>
-                        </label>
-                    </form>
+                </div>
+                <form action="" class="footer__form">
+                    <h2 class="footer__text">
+                        Quality tech news.<br> In your inbox. Every week.
+                    </h2>
+                    <label class="footer__label">
+                        <input type="email" class="footer__input" placeholder="Email">
+                        <button type="submit" class="footer__button">subcribe</button>
+                    </label>
+                </form>
                 </div>
                 <div class="footer__bottom">
                     <ul class="footer__copyright">

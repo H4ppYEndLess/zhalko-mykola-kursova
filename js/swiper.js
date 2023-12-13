@@ -7,6 +7,7 @@ const swiper = new Swiper('.slider', {
         loop:true,
         slidesPerView:'auto',
         spaceBetween: 60,
+        centeredSlides:true,
   });
 
   const hero = new Swiper('.swiper', {

@@ -809,12 +809,21 @@ header {
 	border-radius: 8px;
 	gap: 90px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
 	.subscribtion__content {
 		gap: 0;
 		-webkit-box-pack: justify;
 		    -ms-flex-pack: justify;
 		        justify-content: space-between;
+	}
+}
+@media (max-width: 650px) {
+	.subscribtion__content {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		gap: 25px;
 	}
 }
 @media (max-width: 480px) {
@@ -834,7 +843,7 @@ header {
 	font-weight: 700;
 	margin-bottom: 30px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
 	.subscribtion__title {
 		font-size: 24px;
 	}
@@ -858,9 +867,14 @@ header {
 	        justify-content: center;
 	gap: 15px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
 	.subscribtion__form {
 		width: 50%;
+	}
+}
+@media (max-width: 650px) {
+	.subscribtion__form {
+		width: 100%;
 	}
 }
 .subscribtion__input {
@@ -907,7 +921,7 @@ header {
 .subscribtion__button:hover {
 	background-color: transparent;
 }
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
 	.subscribtion__button {
 		padding: 15px 50px;
 	}
@@ -940,17 +954,15 @@ header {
 	top: 20%;
 	z-index: -1;
 }
-@media (max-width: 480px) {
+@media (max-width: 900px) {
 	.studies__content::after {
 		display: none;
 	}
 }
-@media (max-width: 480px) {
+@media (max-width: 900px) {
 	.studies__content {
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
 		-webkit-box-pack: center;
 		    -ms-flex-pack: center;
 		        justify-content: center;
@@ -965,7 +977,7 @@ header {
 	z-index: 1;
 	max-width: 50%;
 }
-@media (max-width: 480px) {
+@media (max-width: 900px) {
 	.main {
 		width: 100%;
 		max-width: none;
@@ -999,6 +1011,11 @@ header {
 	display: flex;
 	padding-left: 50px;
 }
+@media (max-width: 900px) {
+	.news {
+		padding-left: 0;
+	}
+}
 .news__article {
 	font-size: 20px;
 	line-height: 150%;
@@ -1021,19 +1038,14 @@ header {
 .news__title:hover, .news__title:focus {
 	color: #5C5CFF;
 }
-@media (max-width: 768px) {
+@media (max-width: 650px) {
 	.news__title {
-		font-size: 14px;
+		font-size: 18px;
 	}
 }
 
 .columns {
-	margin: 124px 0 248px 0;
-}
-@media (max-width: 480px) {
-	.columns {
-		margin: 64px 0 124px 0;
-	}
+	margin: 64px 0 124px 0;
 }
 @media (max-width: 480px) {
 	.columns__container {
@@ -1199,20 +1211,31 @@ header {
 	background-color: transparent;
 	border: 1px solid #5C5CFF;
 }
+@media (max-width: 768px) {
+	.sub__button {
+		padding: 15px 30px;
+	}
+}
 
 .footer__main {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	padding: 128px 110px;
+	padding: 50px;
 	background-color: #1B1B4D;
 	color: #ABABFA;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	gap: 50px;
 }
 @media (max-width: 768px) {
 	.footer__main {
@@ -1270,6 +1293,18 @@ header {
 	font-size: 14px;
 	letter-spacing: 1.4px;
 }
+.footer__lists {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: space-evenly;
+	    -ms-flex-pack: space-evenly;
+	        justify-content: space-evenly;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+	gap: 25px;
+}
 .footer__title {
 	text-transform: uppercase;
 }
@@ -1294,7 +1329,7 @@ header {
 @media (max-width: 768px) {
 	.footer__form {
 		text-align: center;
-		max-width: 100%;
+		max-width: 90%;
 	}
 }
 .footer__text {
@@ -1371,10 +1406,16 @@ header {
 	text-transform: uppercase;
 	border-radius: 4px;
 	transition: 250ms ease-in;
+	text-align: center;
 }
 .footer__button:focus, .footer__button:hover {
 	background-color: transparent;
 	border: 1px solid #5C5CFF;
+}
+@media (max-width: 768px) {
+	.footer__button {
+		padding: 15px 50px;
+	}
 }
 .footer__bottom {
 	background-color: #ABABFA;
