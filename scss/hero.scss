@@ -2,8 +2,6 @@
 
     &__content {
         display: flex !important;
-        margin-top: 120px;
-        border: 1px solid $gray;
         position: relative;
         background-color: $white;
         transition: 250ms ease-in;
@@ -28,9 +26,9 @@
 
         &:hover .hero__text::after,
         &:focus .hero__text::after{
-            left: -10px;
+            left: 5%;
         }
-        @include media(480px){
+        @include media(1200px){
             flex-direction: column;  
         }
 
@@ -41,8 +39,11 @@
     }
 
     &__text {
-        margin: 65px 100px 64px 45px;
+        padding: 65px 100px 64px 45px;
         position: relative;
+        @include media(600px){
+            padding: 65px 20px;
+        }
             &::after{
             content: "";
             position: absolute;
@@ -51,11 +52,8 @@
             background-color: $purple;
             z-index: 3;
             top: 0;
-            left: -45px;
+            left: 0px;
             transition: 250ms ease-in;
-        }
-        @include media(480px){
-            margin: 20px;
         }
     }
 
@@ -89,10 +87,17 @@
 
     &__image {
         max-width: 50%;
-        @include media(480px){
-            width: 100%;
+        @include media(1200px){
+            width: 80%;
             height: auto;
             max-width: none;  
         }
+        @include media(768px){
+            width: 100%;
+        }
     }
+}
+
+.swiper{
+    padding-top: 100px !important;
 }

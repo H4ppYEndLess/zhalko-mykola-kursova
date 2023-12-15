@@ -19,7 +19,13 @@ html{
     margin: auto;
     max-width: 1300px;
     justify-content: center;
-    padding: 40px;
+}
+
+section{
+    padding: 0 40px 40px 40px;
+    @include media(650px){
+        padding: 0 20px 20px 20px;
+    }
 }
 
 .hidden{

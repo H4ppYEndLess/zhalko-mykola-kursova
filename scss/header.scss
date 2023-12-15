@@ -56,10 +56,12 @@
 
     &__navigation {
         display: flex;
-        margin-left: 36px;
         gap: 40px;
         @include media(768px){
             display: none;
         }
+    }
+    & nav{
+        margin-left: 36px;
     }
 }

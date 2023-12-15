@@ -38,6 +38,9 @@
     }
 	&__bottom {
         padding: 24px;
+        @include media(900px){
+            padding: 24px 0;
+        }        
 
 	}
 
