@@ -49,7 +49,7 @@
         &:focus{
             background-color: $light-blue;
         }
-        @include media(440px){
+        @include media(480px){
             margin-left: 0;
         }
     }

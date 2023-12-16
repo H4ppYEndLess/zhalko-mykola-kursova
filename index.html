@@ -96,7 +96,7 @@
         </section>
         <section class="articles">
                 <div class="container column hidden">
-                <h2 class="articles__title">recent articles</h2>
+                <h2 class="articles__title articles__stroke">recent articles</h2>
                 <div class="swiper slider articles__slider">
                     <div class="swiper-pagination"></div>
                     <div class="swiper-wrapper">
@@ -276,9 +276,9 @@
                         <h3 class="sub__title">
                             Quality tech news. In your inbox. Every week.
                         </h3>
-                        <form action="#" class="sub__form" >
-                            <input type="email" class="sub__input" placeholder="Email address">
-                            <button type="submit" class="sub__button">subscribe</button>
+                        <form class="sub__form" id="subscribe">
+                            <input type="email" id="email" class="sub__input" placeholder="Email address" required>
+                            <button type="submit" class="sub__button" data-modal-open>subscribe</button>
                         </form>
                     </div>
                     <div class="columns__container">
@@ -374,15 +374,6 @@
                         <li class="footer__link"><a href="#">License</a></li>
                         <li class="footer__link"><a href="#">Change Log</a></li>
                     </ul>
-                </div>
-                <div>
-                    <h3 class="footer__text">
-                        Quality tech news. In your inbox. Every week.
-                    </h3>
-                    <form action="" class="footer__form">
-                        <input type="email" class="footer__input" placeholder="Email">
-                        <button type="submit" class="footer__button">subcribe</button>
-                    </form>
                 </div>
                 </div>
                 <div class="footer__bottom">

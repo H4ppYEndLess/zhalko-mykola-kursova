@@ -169,7 +169,7 @@ button, select, textarea {
 .header__button:hover, .header__button:focus {
 	background-color: #1B1B4D;
 }
-@media (max-width: 440px) {
+@media (max-width: 480px) {
 	.header__button {
 		margin-left: 0;
 	}
@@ -524,12 +524,12 @@ header {
 }
 
 .articles {
-	margin-top: 120px;
 	padding: 0;
+	padding-top: 120px;
 }
 @media (max-width: 650px) {
 	.articles {
-		margin-top: 60px;
+		padding-top: 60px;
 	}
 }
 .articles__title {
@@ -550,6 +550,9 @@ header {
 	background-color: #413E52;
 	bottom: 0;
 	left: 0;
+}
+.articles__stroke {
+	margin: 0 40px 20px;
 }
 .articles__slider {
 	padding: 0 !important;
@@ -600,6 +603,9 @@ header {
 	background-color: #5C5CFF !important;
 }
 
+.subscribtion {
+	padding-top: 40px;
+}
 .subscribtion__content {
 	background-color: #111131;
 	padding: 48px;
@@ -734,11 +740,11 @@ header {
 }
 
 .studies {
-	margin-top: 128px;
+	padding-top: 128px;
 }
 @media (max-width: 480px) {
 	.studies {
-		margin-top: 48px;
+		padding-top: 48px;
 	}
 }
 .studies__content {
@@ -849,12 +855,8 @@ header {
 	}
 }
 
-.columns {
-	margin: 64px 0 124px 0;
-}
 @media (max-width: 480px) {
 	.columns {
-		margin: 32px 0;
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
 		    -ms-flex-direction: column;
@@ -1023,6 +1025,7 @@ header {
 	border: 1px solid transparent;
 	transition: 250ms ease-in;
 	border-radius: 4px;
+	text-transform: uppercase;
 }
 .sub__button:hover, .sub__button:focus {
 	background-color: transparent;

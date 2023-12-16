@@ -1,6 +1,7 @@
 (() => {
+    const forms = document.querySelectorAll("#subscribe");
     const refs = {
-        openModalBtn: document.querySelector("[data-modal-open]"),
+        openModalBtns: document.querySelectorAll("[data-modal-open]"),
         closeModalBtn: document.querySelector("[data-modal-close]"),
         modal: document.querySelector("[data-modal]"),
     };
@@ -14,15 +15,24 @@
     }
   
     function openModal() {
-        refs.modal.classList.remove("is-hidden");
-        disableScroll();
+        // Get the form associated with the clicked button
+        const form = this.closest("form");
+
+        if (form.checkValidity()) {
+            refs.modal.classList.remove("is-hidden");
+            disableScroll();
+        } else {
+            form.reportValidity();
+        }
     }
   
     function closeModal() {
         refs.modal.classList.add("is-hidden");
         enableScroll();
     }
-  
-    refs.openModalBtn.addEventListener("click", openModal);
+
+    refs.openModalBtns.forEach(element => {
+        element.addEventListener("click", openModal);
+    });
     refs.closeModalBtn.addEventListener("click", closeModal);
-  })();
+})();

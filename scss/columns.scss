@@ -1,7 +1,5 @@
 .columns {
-    margin: 64px 0 124px 0;
     @include media(480px){
-        margin: 32px 0;
         flex-direction: column;
         gap: 20px;
     }
@@ -121,6 +119,7 @@
     &__button {
         @include button(15px 80px, $purple, $white, 1px solid transparent);
         border-radius: 4px;
+        text-transform: uppercase;
         &:hover,
         &:focus{
             background-color: transparent;
