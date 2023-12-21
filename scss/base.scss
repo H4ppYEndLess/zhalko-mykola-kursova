@@ -1,0 +1,33 @@
+@import './mixin.scss';
+@import './variables.scss';
+
+body{
+    background-color: $white;
+    color: $gray;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'inter', sans-serif;
+}
+.column{
+    flex-direction: column;
+}
+html{
+    scroll-behavior: smooth
+}
+.container{
+    display: flex;
+    margin: auto;
+    max-width: 1300px;
+    justify-content: center;
+}
+
+section{
+    padding: 0 40px 40px 40px;
+    @include media(650px){
+        padding: 0 20px 20px 20px;
+    }
+}
+
+.hidden{
+    overflow: hidden;
+}
